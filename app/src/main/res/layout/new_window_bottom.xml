@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <FrameLayout
+        android:id="@+id/new_window_back"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/index_bottom_back" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/new_window"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/new_window_btn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/page_icon_add" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/delete_window"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/page_icon_del" />
+
+    </FrameLayout>
+
+
+
+
+
+    </LinearLayout>

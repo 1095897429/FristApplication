@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_above="@+id/part2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/part2"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <FrameLayout
+            android:id="@+id/index_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="22dp"
+                android:src="@mipmap/index_bottom_back" />
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/index_menu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="22dp"
+                android:src="@mipmap/index_bottom_meun" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/index_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="22dp"
+                android:src="@mipmap/index_bottom_home" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/index_new"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="22dp"
+                android:src="@mipmap/index_bottom_page" />
+
+            <TextView
+                android:id="@+id/window_count"
+                android:text="1"
+                android:visibility="visible"
+                android:textSize="12sp"
+                android:textColor="#4F515D"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/new_window_ll"
+        android:background="#1C1C1C"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+
+        <include layout="@layout/new_window_bottom"></include>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

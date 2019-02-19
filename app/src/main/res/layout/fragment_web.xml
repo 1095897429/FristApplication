@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/part1"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/center_title"
+            android:hint="Google"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:drawableLeft="@mipmap/nav_seacher_green"
+            android:drawableRight="@mipmap/nav_seacher_update"
+            android:textColor="@color/font_color"
+            android:textColorHint="@color/font_color"
+            android:background="@drawable/shape_search_1_bg"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:progressDrawable="@drawable/pg"
+        android:visibility="gone"
+        />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></WebView>
+
+
+
+
+</LinearLayout>

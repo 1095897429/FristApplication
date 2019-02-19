@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <include layout="@layout/common_head"></include>
+
+    <!-- 内容 -->
+    <LinearLayout
+        android:id="@+id/nickname_layout"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- 昵称 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textSize="18sp"
+                android:textColor="@color/font_color"
+                />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/nickname_txt"
+                android:textSize="18sp"
+                android:textColor="@color/font_color"
+                android:hint="请输入昵称"
+                android:textColorHint="@color/hint_color"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:lines="1"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sex_layout"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textSize="18sp"
+                android:textColor="@color/font_color"
+                />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/sex_txt"
+                android:textSize="18sp"
+                android:textColor="@color/font_color"
+                android:hint="请输入手机号"
+                android:textColorHint="@color/hint_color"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:lines="1"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_layout"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- 昵称 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textSize="18sp"
+                android:textColor="@color/font_color"
+                />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/phoneNum_txt"
+                android:textSize="18sp"
+                android:textColor="@color/font_color"
+                android:hint="请输入手机号"
+                android:textColorHint="@color/hint_color"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:lines="1"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+
+    </LinearLayout>
+
+
+    <!-- 退出 -->
+    <TextView
+        android:id="@+id/save"
+        android:text="保存"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_save_bg"
+        android:layout_marginTop="40dp"
+        android:padding="12dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

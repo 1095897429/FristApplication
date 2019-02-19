@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/delete_btn"
+        android:text="清空所有历史记录"
+        android:textSize="17sp"
+        android:textColor="#F13838"
+        android:background="@drawable/shape_delete_bg"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cancle_btn"
+        android:text="取消"
+        android:textSize="17sp"
+        android:textColor="@color/font_color"
+        android:background="@drawable/shape_delete_bg"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

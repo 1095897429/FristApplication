@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/next_btn"
+        android:layout_centerInParent="true"
+        android:text="登录"
+        android:textSize="18sp"
+        android:textColor="#0162FF"
+        android:background="@drawable/shape_delete_bg"
+        android:padding="12dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_above="@+id/next_btn"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="验证码"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/show_msg"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/verty_et"
+                android:hint="请输入你的验证码"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="19sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/get_msg"
+                android:text="获取验证码"
+                android:textSize="13sp"
+                android:layout_gravity="right|center"
+                android:background="@drawable/shape_getmsg_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </FrameLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"></View>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

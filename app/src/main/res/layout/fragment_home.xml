@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefreshLayout"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:orientation="vertical">
+
+  <TextView
+      android:id="@+id/update_text"
+      android:text="为您更新了20条热点"
+      android:background="@drawable/shape_update_bg"
+      android:visibility="gone"
+      android:textSize="12sp"
+      android:paddingTop="2dp"
+      android:paddingBottom="2dp"
+      android:paddingLeft="28dp"
+      android:paddingRight="28dp"
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/recycleView"
+      android:visibility="visible"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+  </android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+  <LinearLayout
+      android:id="@+id/no_net_ll"
+      android:visibility="gone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="20dp"
+      android:gravity="center"
+      android:orientation="vertical">
+      <TextView
+          android:id="@+id/text"
+          android:text="网络加载异常"
+          android:textSize="16sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="10dp" />
+
+      <Button
+          android:id="@+id/load_new"
+          android:text="重新加载"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+
+
+  </LinearLayout>
+
+
+</LinearLayout>
+

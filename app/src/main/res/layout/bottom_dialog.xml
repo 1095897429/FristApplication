@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_bootomdialog_bg"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/login_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:orientation="horizontal">
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/head_small_icon"
+            android:src="@mipmap/menu_icon_photo"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/toLogin"
+            android:text="未登录"
+            android:textSize="16sp"
+            android:textColor="#4F515D"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/menu_icon_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:padding="15dp"
+        android:verticalSpacing="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/transparent"
+        android:numColumns="3">
+    </GridView>
+
+
+
+</LinearLayout>

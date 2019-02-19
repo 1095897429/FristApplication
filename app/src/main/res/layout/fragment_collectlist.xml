@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+            android:text="收藏"
+            android:layout_width="match_parent"
+            android:gravity="left|center"
+            android:textColor="@color/font_color"
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:layout_height="30dp"
+            android:background="@color/line_color"></TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:text="暂时没有收藏记录哦"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/font_color"
+        android:textSize="12sp"
+        android:layout_height="match_parent"></TextView>
+
+
+
+
+
+
+</LinearLayout>

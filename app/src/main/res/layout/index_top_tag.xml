@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/index_f1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/index_icon_nav_1" />
+
+        <TextView
+            android:id="@+id/index_f1_text"
+            android:padding="2dp"
+            android:textSize="10sp"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dd"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/index_f2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/dd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/index_icon_nav_2" />
+        <TextView
+            android:id="@+id/index_f2_text"
+            android:padding="2dp"
+            android:textSize="10sp"
+            android:layout_centerInParent="true"
+            android:text="鱼塘"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dd2"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/index_f3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/dd3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/index_icon_nav_3" />
+
+
+        <TextView
+            android:id="@+id/index_f3_text"
+            android:padding="2dp"
+            android:textSize="10sp"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dd3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/index_f4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/dd4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/index_icon_nav_4" />
+        <TextView
+            android:id="@+id/index_f4_text"
+            android:padding="2dp"
+            android:textSize="10sp"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dd4"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/index_f5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/dd5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/index_icon_nav_5" />
+        <TextView
+            android:id="@+id/index_f5_text"
+            android:padding="2dp"
+            android:textSize="10sp"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dd5"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

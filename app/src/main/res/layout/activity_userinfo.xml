@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/part1"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@mipmap/icon_back"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/center_title"
+            android:text="个人中心"
+            android:textSize="18sp"
+            android:textColor="@color/font_color"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/part1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 头像 -->
+        <LinearLayout
+            android:id="@+id/part2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/head_icon"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="56dp"
+                android:layout_height="56dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:text="逗同学"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:gravity="center|left"
+                android:textColor="@color/font_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+        <!-- 内容 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- 昵称 -->
+            <RelativeLayout
+                android:id="@+id/nickname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textSize="18sp"
+                    android:textColor="@color/font_color"
+                    />
+                <ImageView
+                    android:id="@+id/nickname_icon"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/icon_go"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_toLeftOf="@+id/nickname_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="豆同学"
+                    android:textSize="14sp"
+                    android:textColor="@color/hint_color"
+                    />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_color"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <!-- 性别 -->
+            <RelativeLayout
+                android:id="@+id/sex_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textSize="18sp"
+                    android:textColor="@color/font_color"
+                    />
+                <ImageView
+                    android:id="@+id/sex_icon"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/icon_go"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_toLeftOf="@+id/sex_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="男"
+                    android:textSize="14sp"
+                    android:textColor="@color/hint_color"
+                    />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_color"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <!-- 绑定手机 -->
+            <RelativeLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="绑定手机号"
+                    android:textSize="18sp"
+                    android:textColor="@color/font_color"
+                    />
+                <ImageView
+                    android:id="@+id/phone_icon"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/icon_go"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_toLeftOf="@+id/phone_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="18616541823"
+                    android:textSize="14sp"
+                    android:textColor="@color/hint_color"
+                    />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_color"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!-- 退出 -->
+    <TextView
+        android:id="@+id/exit"
+        android:text="退出登录"
+        android:textColor="@color/exit_font_color"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:background="@drawable/shape_exit_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

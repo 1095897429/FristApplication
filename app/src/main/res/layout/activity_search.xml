@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/part1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:layout_height="50dp">
+
+
+        <EditText
+            android:id="@+id/center_title"
+            android:hint="搜索关键词或输入网站"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textColor="@color/font_color"
+            android:background="@drawable/shape_search_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:paddingLeft="28dp"
+            android:paddingRight="12dp"
+            android:drawableRight="@mipmap/index_icon_serch"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="14dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/cancle"
+            android:text="取消"
+            android:textColor="@color/font_color"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"></View>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/id_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+
+    <LinearLayout
+        android:id="@+id/history_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史记录"/>
+
+            <TextView
+                android:id="@+id/tv_deleteAll"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除历史记录"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:text="暂时没有历史记录哦"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/font_color"
+        android:textSize="12sp"
+        android:layout_height="match_parent"></TextView>
+
+
+
+
+</LinearLayout>

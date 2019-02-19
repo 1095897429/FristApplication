@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:id="@+id/part1"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:padding="10dp">
+
+
+          <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:text="25°"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:id="@+id/degrees"
+                        android:layout_centerVertical="true"
+                        android:layout_width="39dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:text="多云"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_alignTop="@+id/degrees"
+                        android:layout_toRightOf="@+id/degrees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="上海市 静安区"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_alignBottom="@+id/degrees"
+                        android:layout_toRightOf="@+id/degrees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/search_text"
+                android:text="@string/index_hint_text"
+                android:layout_centerInParent="true"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/font_color"
+                android:drawableRight="@mipmap/index_icon_serch"
+                android:background="@drawable/index_search_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/index_icon_f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/dd_icon_f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/index_icon_nav_1" />
+
+                    <TextView
+                        android:id="@+id/index_f1_text"
+                        style="@style/index_font_style"
+                        android:text="首页"
+                        android:layout_below="@+id/dd_icon_f1"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_icon_f2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/dd2_icon_f2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/index_icon_nav_2" />
+                    <TextView
+                        android:id="@+id/index_f2_text"
+                        android:text="鱼塘"
+                        style="@style/index_font_style"
+                        android:layout_below="@+id/dd2_icon_f2"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/index_icon_f3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/dd3_icon_f3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/index_icon_nav_3" />
+
+
+                    <TextView
+                        android:id="@+id/index_f3_text"
+                        android:text="消息"
+                        style="@style/index_font_style"
+                        android:layout_below="@+id/dd3_icon_f3"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_icon_f4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/dd4_icon_f4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/index_icon_nav_4" />
+                    <TextView
+                        android:id="@+id/index_f4_text"
+                        android:text="我的"
+                        style="@style/index_font_style"
+                        android:layout_below="@+id/dd4_icon_f4"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/index_f5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/dd5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/index_icon_nav_5" />
+                    <TextView
+                        android:id="@+id/index_f5_text"
+                        android:text="我的"
+                        style="@style/index_font_style"
+                        android:layout_below="@+id/dd5"/>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+      <com.ngbj.browse.view.MyScrollView
+          android:id="@+id/scrollView"
+          android:layout_below="@+id/part1"
+          android:fillViewport="true"
+          android:visibility="visible"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          >
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+              <include layout="@layout/index_top_tag2"/>
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="10dp"
+                  android:background="#F3F3F3"></View>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:background="@color/white"
+                      android:gravity="center"
+                      android:orientation="vertical">
+
+                      <com.ngbj.browse.view.myview.ViewPagerTitle
+                          android:id="@+id/viewPagertitle"
+                          android:layout_width="match_parent"
+                          android:visibility="visible"
+                          android:layout_height="40dp">
+                      </com.ngbj.browse.view.myview.ViewPagerTitle>
+
+
+                  </LinearLayout>
+
+
+                  <android.support.v4.view.ViewPager
+                      android:id="@+id/viewPager"
+                      android:visibility="visible"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+                  </android.support.v4.view.ViewPager>
+
+                  <com.ngbj.browse.view.MyListView
+                      android:id="@+id/newsListview"
+                      android:visibility="gone"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"></com.ngbj.browse.view.MyListView>
+
+
+              </LinearLayout>
+
+
+          </LinearLayout>
+
+
+      </com.ngbj.browse.view.MyScrollView>
+
+     <!-- 第一次隐藏 -->
+    <LinearLayout
+        android:id="@+id/part2"
+        android:layout_below="@+id/part1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.ngbj.browse.view.myview.ViewPagerTitle
+                android:id="@+id/viewPagertitle_2"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="40dp">
+            </com.ngbj.browse.view.myview.ViewPagerTitle>
+
+
+        </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_2"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+     <include layout="@layout/common_bottom"></include>
+
+
+
+
+</LinearLayout>

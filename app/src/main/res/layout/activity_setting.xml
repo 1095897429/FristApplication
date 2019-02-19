@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <include layout="@layout/common_head"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"></View>
+
+    <!-- 内容1 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- 缓存 -->
+        <RelativeLayout
+            android:id="@+id/clean_cache_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除缓存"
+                android:textSize="17sp"
+                android:textColor="@color/font_color"
+                />
+            <ImageView
+                android:id="@+id/nickname_icon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/icon_go"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/cache_data"
+                android:layout_toLeftOf="@+id/nickname_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0M"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/font_color"
+                />
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+        <Space
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- 清除历史记录 -->
+        <RelativeLayout
+            android:id="@+id/sex_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除历史记录"
+                android:textSize="17sp"
+                android:textColor="@color/font_color"
+                />
+            <ImageView
+                android:id="@+id/sex_icon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/icon_go"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+        <Space
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- 分享给朋友 -->
+        <RelativeLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享给朋友"
+                android:textSize="17sp"
+                android:textColor="@color/font_color"
+                />
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/icon_go"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- 广告过滤 -->
+        <RelativeLayout
+            android:id="@+id/ad_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广告过滤"
+                android:textSize="17sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/font_color"
+                />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/ad_switch"
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                app:kswTextOff=""
+                app:kswTextOn=""
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                app:kswBackDrawable="@drawable/ios_back_drawable"
+                app:kswBackMeasureRatio="1.4"
+                app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                app:kswThumbMarginBottom="-8dp"
+                app:kswThumbMarginLeft="-5dp"
+                app:kswThumbMarginRight="-5dp"
+                app:kswThumbMarginTop="-2.5dp"
+                app:kswTextMarginH="6dp"
+                android:checked="false"
+                />
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/line_color"
+        />
+
+    <!-- 内容2 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- 默认浏览器 -->
+        <RelativeLayout
+            android:id="@+id/default_browser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置默认浏览器"
+                android:textSize="17sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/font_color"
+                />
+
+            <ImageView
+                android:id="@+id/default_icon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/icon_go"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- 版本 -->
+        <RelativeLayout
+            android:id="@+id/version_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本"
+                android:textSize="17sp"
+                android:textColor="@color/font_color"
+                />
+
+            <TextView
+                android:id="@+id/version_text"
+                android:text="1.0.0"
+                android:textColor="@color/hint_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- 意见反馈 -->
+        <RelativeLayout
+            android:id="@+id/advise_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="意见反馈"
+                android:textSize="17sp"
+                android:textColor="@color/font_color"
+                />
+            <ImageView
+                android:id="@+id/advise_icon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/icon_go"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- 免责条款 -->
+        <RelativeLayout
+            android:id="@+id/response_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="免责条款"
+                android:textSize="17sp"
+                android:textColor="@color/font_color"
+                />
+            <ImageView
+                android:id="@+id/response_icon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/icon_go"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

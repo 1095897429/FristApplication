@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <include layout="@layout/common_head"></include>
+
+
+    <RelativeLayout
+        android:background="#F3F3F3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="下载分类"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:text="手机剩余空间 56.35GB"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+
+        <TextView
+            android:id="@+id/down_pic"
+            android:text="图片"
+            android:textColor="@color/font_color"
+            android:textSize="15sp"
+            android:drawableTop="@mipmap/download_pic"
+            android:drawablePadding="4dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/down_file"
+            android:text="文档"
+            android:textColor="@color/font_color"
+            android:textSize="15sp"
+            android:drawableTop="@mipmap/download_doc"
+            android:drawablePadding="4dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/down_giz"
+        android:text="压缩"
+        android:textColor="@color/font_color"
+        android:textSize="15sp"
+        android:drawableTop="@mipmap/download_zip"
+        android:drawablePadding="4dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/other"
+            android:text="其他"
+            android:textColor="@color/font_color"
+            android:textSize="15sp"
+            android:drawableTop="@mipmap/download_other"
+            android:drawablePadding="4dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="下载列表"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:background="#F3F3F3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
